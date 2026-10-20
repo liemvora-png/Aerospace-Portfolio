@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang='en' data-theme='dark'>
+<head>
+<meta charset='utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>Liem Vora — Orchestration, Composition &amp; Conducting</title>
+<meta name='description' content='Orchestral arrangement, composition and conducting. Founder of a six-person string ensemble, founder of a school AI club, and builder of a personal AI and cloud storage data server.' />
+
+<link rel='icon' href='/Portfolio/favicon.svg' type='image/svg+xml' />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link href='https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap' rel='stylesheet' />
+<link rel='stylesheet' href='/Portfolio/assets/css/styles.css' />
+
+<!-- Adds the "js" class so scroll-reveal animations activate. Without JS the page stays fully visible. -->
+<script>document.documentElement.className += ' js';</script>
+</head>
+
+<!--
+  ============================================================
+  EDITING THIS FILE — everything you need is below.
+  ------------------------------------------------------------
+  1. Headline numbers  → .stat-num elements in the stats band.
+                          Change data-count / data-prefix / data-suffix.
+  2. Projects           → .work-card blocks under #work.
+  3. Bookings ledger    → table.ledger-table under #music.
+  4. Specs              → .spec-list blocks under #engineering.
+  5. Honors             → .honor items under #honors.
+  6. Contact details    → .contact-card links under #contact.
+  A "Template" comment marks every block that is safe to delete.
+  ============================================================
+-->
+
+<body>
+
+<a class='skip-link' href='#about'>Skip to content</a>
+<div class='grain' aria-hidden='true'></div>
+<div class='scroll-progress' aria-hidden='true'><span id='progressBar'></span></div>
+
+<!-- ======================= Header ======================= -->
+<header id='siteHeader' class='site-header'>
+  <nav class='nav container' aria-label='Primary'>
+    <a class='brand' href='#top'>
+      <svg class='brand-mark' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true' focusable='false'>
+        <path d='M9 17.5V4.5l10-1.8v12.4' />
+        <circle cx='6.4' cy='17.6' r='2.6' />
+        <circle cx='16.4' cy='15.4' r='2.6' />
+      </svg>
+      <span class='brand-text'>Liem Vora</span>
+    </a>
+
+    <ul id='navLinks' class='nav-links'>
+      <li><a href='#about'>About</a></li>
+      <li><a href='#music'>Music</a></li>
+      <li><a href='#work'>Work</a></li>
+      <li><a href='#engineering'>Engineering</a></li>
+      <li><a href='#honors'>Honors</a></li>
+      <li><a href='#contact'>Contact</a></li>
+    </ul>
+
+    <div class='nav-actions'>
+      <button id='themeToggle' class='icon-btn' type='button' aria-pressed='false' aria-label='Switch to light theme'>
+        <svg class='icon icon-moon' viewBox='0 0 24 24' aria-hidden='true' focusable='false'><path d='M20 14.2A8.4 8.4 0 1 1 9.8 4 6.9 6.9 0 0 0 20 14.2Z' /></svg>
+        <svg class='icon icon-sun' viewBox='0 0 24 24' aria-hidden='true' focusable='false'>
+          <circle cx='12' cy='12' r='4.2' />
+          <path d='M12 2.6v2.1M12 19.3v2.1M4.3 4.3l1.5 1.5M18.2 18.2l1.5 1.5M2.6 12h2.1M19.3 12h2.1M4.3 19.7l1.5-1.5M18.2 5.8l1.5-1.5' />
+        </svg>
+      </button>
+      <a class='btn btn-sm btn-primary nav-cta' href='#contact'>Contact</a>
+      <button id='navToggle' class='icon-btn nav-burger' type='button' aria-expanded='false' aria-controls='navLinks' aria-label='Open menu'>
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ======================= Hero ======================= -->
+  <section id='top' class='hero'>
+    <canvas id='heroCanvas' class='hero-canvas' aria-hidden='true'></canvas>
+    <div class='hero-veil' aria-hidden='true'></div>
+
+    <div class='container hero-inner'>
+      <p class='eyebrow'>Music &amp; systems</p>
+      <h1 class='hero-title'>
+        <span class='line'>Orchestral arrangement,</span>
+        <span class='line'>composition,</span>
+        <span class='line'>and conducting.</span>
+      </h1>
+      <p class='hero-lede'>
+        I found a six-person string ensemble that now books $10,000+ a year in weddings,
+        founded a school AI club with 40+ members, and built a personal AI and cloud
+        storage data server to keep both running.
+      </p>
+      <div class='hero-actions'>
+        <a class='btn btn-primary' href='#work'>See the work</a>
+        <a class='btn btn-ghost' href='#music'>The ensemble</a>
+      </div>
+      <p class='hero-scroll'><span class='scroll-line' aria-hidden='true'></span>Scroll</p>
+    </div>
+  </section>
+
+  <!-- ======================= Stats =======================
+       EDIT: change data-count / data-prefix / data-suffix on each .stat-num.
+       ============================================================ -->
+  <section class='stats-band' aria-label='Highlights'>
+    <div class='container'>
+      <div class='stats-grid'>
+        <div class='stat reveal'>
+          <span class='stat-num' data-count='6'>6</span>
+          <span class='stat-label'>Members in the string ensemble I founded and conduct</span>
+        </div>
+        <div class='stat reveal'>
+          <span class='stat-num' data-count='10000' data-prefix='$' data-suffix='+'>$10,000+</span>
+          <span class='stat-label'>Annual wedding revenue generated by the ensemble</span>
+        </div>
+        <div class='stat reveal'>
+          <span class='stat-num' data-count='40' data-suffix='+'>40+</span>
+          <span class='stat-label'>Members in the school AI club I founded</span>
+        </div>
+        <div class='stat reveal'>
+          <span class='stat-num' data-count='1'>1</span>
+          <span class='stat-label'>All-State qualification — TMEA Region 23</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= About ======================= -->
+  <section id='about' class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>About <span class='slash'>/</span> profile</p>
+        <h2 class='section-title'>Two tracks, one way of working</h2>
+        <p class='section-sub'>
+          Music taught me to build a group that rehearses, performs and gets paid.
+          Engineering taught me to build the tools that make it possible.
+        </p>
+      </div>
+
+      <div class='about-grid'>
+        <div class='about-body reveal'>
+          <p class='lede'>I arrange, compose and conduct for strings — and I build the systems behind the work.</p>
+          <p>
+            I founded a string ensemble of six people that performs weddings and private events,
+            generating over $10,000 in revenue each year. I founded a school AI club that grew past
+            40 members, running hands-on sessions on applied machine learning. Underneath both sits
+            a personal AI and cloud storage data server that I designed, built and maintain myself.
+          </p>
+          <p>
+            Edit this paragraph freely — it is plain text, and anything you add wraps naturally.
+          </p>
+
+          <div class='currently'>
+            <h3>Currently</h3>
+            <ul class='chips'>
+              <li>Orchestration</li>
+              <li>Composition</li>
+              <li>Conducting</li>
+              <li>String ensemble</li>
+              <li>Club leadership</li>
+              <li>AI infrastructure</li>
+              <li>Cloud storage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- EDIT: quick facts — swap the values freely. -->
+        <div class='panel reveal'>
+          <div class='panel-head'>
+            <p>At a glance</p>
+            <h3>What I bring</h3>
+          </div>
+          <dl class='spec-list'>
+            <div><dt>Discipline</dt><dd>Strings</dd></div>
+            <div><dt>Roles</dt><dd>Arrange · Compose · Conduct</dd></div>
+            <div><dt>Ensemble</dt><dd>6 members</dd></div>
+            <div><dt>Revenue</dt><dd>$10,000+ / yr</dd></div>
+            <div><dt>Community</dt><dd>AI club, 40+ members</dd></div>
+            <div><dt>Builds</dt><dd>Personal AI + storage server</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Music ======================= -->
+  <section id='music' class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>Music <span class='slash'>/</span> orchestral</p>
+        <h2 class='section-title'>Orchestral arrangement, composition, and conducting</h2>
+        <p class='section-sub'>
+          Writing for strings, rehearsing them, and running the ensemble that books them.
+        </p>
+      </div>
+
+      <div class='music-grid'>
+        <div class='music-lead reveal'>
+          <h3>Six strings, one ensemble</h3>
+          <p>
+            I started the ensemble with six players and grew it into a working group that takes
+            wedding and private-event bookings. I write the charts, arrange for the lineup we have,
+            and conduct from the front — which means every gig is also a rehearsal.
+          </p>
+          <p>
+            The same year I founded it, I founded a school AI club that passed 40 members, so the
+            ensemble and the club ran in parallel. Keeping both on track is what pushed me to build
+            my own AI and cloud storage server rather than juggling five different apps.
+          </p>
+          <blockquote class='pull'>A good ensemble is a system: everyone knows their part, and someone has to keep the time.</blockquote>
+        </div>
+
+        <!-- EDIT: research-note cards. Duplicate or delete a whole .album block. -->
+        <div class='albums'>
+          <article class='album reveal'>
+            <p class='album-artist'>Research note · 1959</p>
+            <h3 class='album-title'>Milestones</h3>
+            <p class='album-track'>So What</p>
+            <p class='album-note'>
+              Modal cycling, and the way the rhythm section stays out of the way of the melody.
+              A good template for a string arrangement that has to breathe.
+            </p>
+          </article>
+
+          <article class='album reveal'>
+            <p class='album-artist'>Research note · 1961</p>
+            <h3 class='album-title'>Free Spirits</h3>
+            <p class='album-track'>So What</p>
+            <p class='album-note'>
+              <em>Free Spirits</em> is the harder study — the changes are less predictable,
+              so the arrangement has to carry the tension instead of the groove.
+            </p>
+          </article>
+
+          <article class='album reveal'>
+            <p class='album-artist'>Research note · 1965</p>
+            <h3 class='album-title'>Money Jungle</h3>
+            <p class='album-track'>Corner Pocket</p>
+            <p class='album-note'>
+              Dense, bluesy, and a lesson in leaving space. Useful when the ceremony needs
+              energy but the room is small.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- EDIT: the ensemble ledger. Rows are sample data — replace with real bookings.
+           Keep the tfoot row so the annual total always shows. -->
+      <div class='ledger reveal'>
+        <div class='panel-head'>
+          <p>Ensemble ledger</p>
+          <h3>Wedding bookings</h3>
+        </div>
+        <div class='table-wrap'>
+          <table class='ledger-table'>
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th class='num'>Fee</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Wedding ceremony + reception</td>
+                <td>Jun 2026</td>
+                <td>Full ensemble</td>
+                <td class='num'>$2,400</td>
+                <td><span class='pill pill-paid'>Paid</span></td>
+              </tr>
+              <tr>
+                <td>Wedding ceremony + reception</td>
+                <td>Aug 2026</td>
+                <td>Full ensemble</td>
+                <td class='num'>$2,600</td>
+                <td><span class='pill pill-paid'>Paid</span></td>
+              </tr>
+              <tr>
+                <td>Wedding ceremony</td>
+                <td>Sep 2026</td>
+                <td>String quartet</td>
+                <td class='num'>$1,200</td>
+                <td><span class='pill pill-open'>Open</span></td>
+              </tr>
+              <tr>
+                <td>Wedding reception</td>
+                <td>Oct 2026</td>
+                <td>Full ensemble</td>
+                <td class='num'>$2,400</td>
+                <td><span class='pill pill-open'>Open</span></td>
+              </tr>
+              <tr>
+                <td>Wedding ceremony + reception</td>
+                <td>Nov 2026</td>
+                <td>Full ensemble</td>
+                <td class='num'>$2,000</td>
+                <td><span class='pill pill-paid'>Paid</span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan='3'>Booked this year</th>
+                <td class='num'>$10,600</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Work =======================
+       EDIT: each .work-card is one project. Duplicate a card to add another,
+       or delete cards you do not need.
+       ============================================================ -->
+  <section id='work' class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>Work <span class='slash'>/</span> projects</p>
+        <h2 class='section-title'>Four things I built and still run</h2>
+        <p class='section-sub'>
+          Two ensembles of people, one machine, and the qualification that got me on stage.
+        </p>
+      </div>
+
+      <div class='work-grid'>
+        <!-- 01 -->
+        <article class='work-card reveal'>
+          <p class='work-index'>01</p>
+          <h3>Six-Person String Ensemble</h3>
+          <p class='work-role'>Founder &amp; Director</p>
+          <p>
+            Founded a string ensemble of six players that performs weddings and private events,
+            generating more than $10,000 in revenue per year. I set the repertoire, arrange for
+            the lineup, conduct from the front and handle the bookings.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Members</span><span>6</span></li>
+            <li><span>Revenue</span><span>$10,000+ / yr</span></li>
+            <li><span>Focus</span><span>Weddings &amp; events</span></li>
+            <li><span>Role</span><span>Arrange · Conduct</span></li>
+          </ul>
+        </article>
+
+        <!-- 02 -->
+        <article class='work-card reveal">
+          <p class='work-index'>02</p>
+          <h3>School AI Club</h3>
+          <p class='work-role'>Founder</p>
+          <p>
+            Founded the school AI club and grew it to more than 40 members. Weekly hands-on
+            sessions covering applied machine learning, tooling and practical projects students
+            can actually build on.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Members</span><span>40+</span></li>
+            <li><span>Cadence</span><span>Weekly</span></li>
+            <li><span>Format</span><span>Hands-on workshops</span></li>
+            <li><span>Role</span><span>Founder &amp; lead</span></li>
+          </ul>
+        </article>
+
+        <!-- 03 -->
+        <article class='work-card reveal">
+          <p class='work-index'>03</p>
+          <h3>Personal AI + Cloud Storage Data Server</h3>
+          <p class='work-role'>Solo build</p>
+          <p>
+            Designed, built and maintain a personal AI server paired with cloud storage — the
+            backbone for the ensemble's booking data and the AI club's shared material.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Type</span><span>AI + cloud storage</span></li>
+            <li><span>Runtime</span><span>Always-on</span></li>
+            <li><span>Access</span><span>Private</span></li>
+            <li><span>Role</span><span>Design · Build · Maintain</span></li>
+          </ul>
+        </article>
+
+        <!-- 04 -->
+        <article class='work-card reveal'>
+          <p class='work-index'>04</p>
+          <h3>TMEA Region 23 — All-State Qualifier</h3>
+          <p class='work-role'>Performer</p>
+          <p>
+            Qualified for the TMEA Region 23 All-State ensemble — advancing through the regional
+            auditions to the state-level stage.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Region</span><span>23</span></li>
+            <li><span>Round</span><span>All-State</span></li>
+            <li><span>Status</span><span>Qualified</span></li>
+            <!-- EDIT: add your instrument or event detail here. -->
+            <li><span>Instrument</span><span>Your instrument</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Engineering =======================
+       EDIT: the .spec-list rows are label/value pairs — add, remove or retitle freely.
+       ============================================================ -->
+  <section id='engineering' class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>Engineering <span class='slash'>/</span> systems</p>
+        <h2 class='section-title'>The machine behind the music</h2>
+        <p class='section-sub'>
+          A personal AI and cloud storage data server, and the community running on top of it.
+        </p>
+      </div>
+
+      <div class='eng-grid'>
+        <div class='eng-col'>
+          <div class='panel reveal">
+            <div class='panel-head'>
+              <p>AI infrastructure</p>
+              <h3>Personal AI + Cloud Storage Data Server</h3>
+            </div>
+            <dl class='spec-list'>
+              <div><dt>Role</dt><dd>Solo build</dd></div>
+              <div><dt>Components</dt><dd>AI + cloud storage</dd></div>
+              <div><dt>Runtime</dt><dd>Always-on server</dd></div>
+              <div><dt>Storage</dt><dd>Encrypted cloud</dd></div>
+              <div><dt>Interface</dt><dd>Web app + API</dd></div>
+              <div><dt>Access</dt><dd>Private</dd></div>
+            </dl>
+          </div>
+
+          <div class='panel reveal">
+            <div class='panel-head'>
+              <p>Community</p>
+              <h3>School AI Club</h3>
+            </div>
+            <dl class='spec-list'>
+              <div><dt>Founded</dt><dd>Your year</dd></div>
+              <div><dt>Members</dt><dd>40+</dd></div>
+              <div><dt>Cadence</dt><dd>Weekly sessions</dd></div>
+              <div><dt>Format</dt><dd>Hands-on workshops</dd></div>
+              <div><dt>Focus</dt><dd>Applied AI &amp; tooling</dd></div>
+              <div><dt>Status</dt><dd>Active</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class='eng-col'>
+          <div class='panel reveal">
+            <div class='panel-head'>
+              <p>Ensemble</p>
+              <h3>Roster &amp; coverage</h3>
+            </div>
+            <dl class='spec-list'>
+              <div><dt>Strings</dt><dd>6 players</dd></div>
+              <div><dt>Instrumentation</dt><dd>Violin · Viola · Cello · Bass</dd></div>
+              <div><dt>Repertoire</dt><dd>Ceremonial &amp; contemporary</dd></div>
+              <div><dt>Bookings</dt><dd>Weddings &amp; private events</dd></div>
+              <div><dt>Director</dt><dd>Liem Vora</dd></div>
+            </dl>
+          </div>
+
+          <div class='panel reveal">
+            <div class='panel-head'>
+              <p>Through-line</p>
+              <h3>Why both halves matter</h3>
+            </div>
+            <p>
+              The ensemble taught me that good work needs people, rehearsal and a plan.
+              The AI club taught me the same thing about an idea. The server is what lets
+              both keep running without me juggling spreadsheets at midnight.
+            </p>
+            <p>
+              Edit this copy freely — plain text, wraps on its own.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Honors =======================
+       EDIT: each .honor is one recognition. Delete the template entries you don't need.
+       ============================================================ -->
+  <section id='honors' class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>Honors <span class='slash'>/</span> recognition</p>
+        <h2 class='section-title'>On stage and off</h2>
+        <p class='section-sub'>
+          Competitions, qualifications and the work they came out of.
+        </p>
+      </div>
+
+      <ul class='honors'>
+        <li class='honor reveal'>
+          <span class='honor-mark' aria-hidden='true'></span>
+          <div>
+            <h3>TMEA Region 23 — All-State Qualifier</h3>
+            <p>
+              Qualified for the TMEA Region 23 All-State ensemble after advancing through the
+              regional audition rounds. A result that came from years of private practice and
+              conducting work with the ensemble.
+            </p>
+          </div>
+        </li>
+
+        <!-- Template entry — replace with a real honor or delete this whole <li>. -->
+        <li class='honor reveal">
+          <span class='honor-mark' aria-hidden='true'></span>
+          <div>
+            <h3>Your honor goes here</h3>
+            <p>
+              Replace this line with a competition result, an ensemble milestone or anything
+              else worth listing. Duplicate this block to add more.
+            </p>
+          </div>
+        </li>
+
+        <!-- Template entry — replace or delete. -->
+        <li class='honor reveal'>
+          <span class='honor-mark' aria-hidden='true'></span>
+          <div>
+            <h3>Another highlight</h3>
+            <p>
+              Another entry in the same format — one title and one short paragraph.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= Contact =======================
+       EDIT: swap the placeholder email, GitHub handle and location.
+       ============================================================ -->
+  <section id='contact' class='section contact'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>Contact <span class='slash'>/</span> say hello</p>
+        <h2 class='section-title'>Bookings, collaborations, questions</h2>
+        <p class='section-sub'>
+          For ensemble bookings, AI club work, or anything in between.
+        </p>
+      </div>
+
+      <div class='contact-grid'>
+        <a class='contact-card reveal' href='mailto:you@example.com'>
+          <span class='contact-label'>Email</span>
+          <span class='contact-value'>you@example.com</span>
+        </a>
+        <a class='contact-card reveal' href='https://github.com/liemvora-png'>
+          <span class='contact-label'>GitHub</span>
+          <span class='contact-value'>@liemvora-png</span>
+        </a>
+        <a class='contact-card reveal' href='mailto:you@example.com?subject=Ensemble%20booking'>
+          <span class='contact-label'>Bookings</span>
+          <span class='contact-value'>Enquire about the ensemble</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= Footer ======================= -->
+<footer class='site-footer'>
+  <div class='container footer-inner'>
+    <span>&copy; 2026 Liem Vora</span>
+    <span class='mono'>Orchestration · Composition · Conducting</span>
+    <a href='#top'>Back to top</a>
+  </div>
+</footer>
+
+<script src='/Portfolio/assets/js/main.js'></script>
+</body>
+</html>

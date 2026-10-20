@@ -5,8 +5,7 @@ Personal site for **Liem Vora** — music and engineering.
 The content mirrors the Notion workspace: orchestral arrangement, composition and
 conducting; founder of a six-piece string ensemble ($10,000+ / year in wedding
 revenue); founder of a school AI club with 40+ members and the personal AI +
-cloud storage server behind it; and jazz research notes on *Milestones*,
-*Free Spirits*, and *Money Jungle*.
+cloud storage server behind it; and a TMEA Region 23 All-State qualification.
 
 ## Stack
 
@@ -58,9 +57,8 @@ All copy lives in `index.html`.
 
 - **Headline figures** are `data-count` / `data-prefix` / `data-suffix` attributes
   on `.stat-num` elements.
+- **Ensemble details** are the `.spec-list` rows in `#music`.
 - **Project details** are the `.work-card` blocks under `#work`.
-- **The ensemble ledger** is the `<table class='ledger-table'>` in `#music`.
-- **System specs** are the `.spec-list` definition lists in `#engineering`.
 - **Honors** are the `.honor` items under `#honors`.
 - **Contact details** are the `.contact-card` links in `#contact`.
 

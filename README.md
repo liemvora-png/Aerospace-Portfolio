@@ -5,8 +5,8 @@ Personal site for **Liem Vora** — music and engineering.
 The content mirrors the Notion workspace: orchestral arrangement, composition and
 conducting; founder of a six-piece string ensemble ($10,000+ / year in wedding
 revenue); founder of a school AI club with 40+ members and the personal AI +
-cloud storage server behind it; an aircraft design project; and jazz research
-notes on *Milestones*, *Free Spirits*, and *Money Jungle*.
+cloud storage server behind it; and jazz research notes on *Milestones*,
+*Free Spirits*, and *Money Jungle*.
 
 ## Stack
 
@@ -38,8 +38,19 @@ python3 -m http.server 8080
 
 > The repository is currently private. GitHub Pages only serves private
 > repositories on paid plans — make the repo public, or use a paid account, to
-> publish the site. The `404.html` and asset paths assume the project-site
-> URL `https://liemvora-png.github.io/Portfolio/`.
+> publish the site.
+
+### Asset paths
+
+Every asset link in `index.html` and `404.html` is **relative**
+(`assets/css/styles.css`, `favicon.svg`), never absolute. That way the site
+resolves correctly whether it is served from the project-site URL
+(`https://liemvora-png.github.io/Portfolio/`) or from a custom domain
+(`https://liemvora.me/`) where the site root is the domain itself.
+
+An absolute path such as `/Portfolio/assets/css/styles.css` breaks the moment a
+custom domain is added, because the browser requests it from the domain root
+and gets a 404. If you add or remove a `CNAME`, no file changes are needed.
 
 ## Editing content
 
@@ -49,7 +60,8 @@ All copy lives in `index.html`.
   on `.stat-num` elements.
 - **Project details** are the `.work-card` blocks under `#work`.
 - **The ensemble ledger** is the `<table class='ledger-table'>` in `#music`.
-- **The aircraft spec** is the `.spec-list` definition list in `#engineering`.
+- **System specs** are the `.spec-list` definition lists in `#engineering`.
+- **Honors** are the `.honor` items under `#honors`.
 - **Contact details** are the `.contact-card` links in `#contact`.
 
 ## Design notes

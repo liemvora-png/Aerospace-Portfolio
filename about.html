@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang='en' data-theme='dark'>
+<head>
+<meta charset='utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>About — Liem Vora</title>
+<meta name='description' content='Who I am: orchestral arrangement, composition and conducting, founder of a six-person string ensemble, founder of a school AI club, and builder of a personal AI and cloud storage data server.' />
+
+<link rel='icon' href='favicon.svg' type='image/svg+xml' />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link href='https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap' rel='stylesheet' />
+<link rel='stylesheet' href='assets/css/styles.css' />
+
+<script>document.documentElement.className += ' js';</script>
+</head>
+
+<!--
+  ============================================================
+  ABOUT ME
+  ------------------------------------------------------------
+  EDITING MAP
+  1. Biography prose   → the .about-body paragraphs
+  2. Quick facts       → .spec-list rows in the panel
+  3. Projects          → .work-card blocks under #work
+  4. Honors            → .honor items under #honors
+  5. Skills            → .chips list in .currently
+
+  Asset links are relative (assets/...).
+  ============================================================
+-->
+
+<body>
+
+<a class='skip-link' href='#main'>Skip to content</a>
+<div class='grain' aria-hidden='true'></div>
+<div class='scroll-progress' aria-hidden='true'><span id='progressBar'></span></div>
+
+<!-- ======================= Header ======================= -->
+<header id='siteHeader' class='site-header'>
+  <nav class='nav container' aria-label='Primary'>
+    <a class='brand' href='index.html'>
+      <svg class='brand-mark' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true' focusable='false'>
+        <path d='M9 17.5V4.5l10-1.8v12.4' />
+        <circle cx='6.4' cy='17.6' r='2.6' />
+        <circle cx='16.4' cy='15.4' r='2.6' />
+      </svg>
+      <span class='brand-text'>Liem Vora</span>
+    </a>
+
+    <ul id='navLinks' class='nav-links'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='about.html' class='is-active'>About</a></li>
+      <li><a href='services.html'>Services</a></li>
+      <li><a href='contact.html'>Contact</a></li>
+    </ul>
+
+    <div class='nav-actions'>
+      <button id='themeToggle' class='icon-btn' type='button' aria-pressed='false' aria-label='Switch to light theme'>
+        <svg class='icon icon-moon' viewBox='0 0 24 24' aria-hidden='true' focusable='false'><path d='M20 14.2A8.4 8.4 0 1 1 9.8 4 6.9 6.9 0 0 0 20 14.2Z' /></svg>
+        <svg class='icon icon-sun' viewBox='0 0 24 24' aria-hidden='true' focusable='false'>
+          <circle cx='12' cy='12' r='4.2' />
+          <path d='M12 2.6v2.1M12 19.3v2.1M4.3 4.3l1.5 1.5M18.2 18.2l1.5 1.5M2.6 12h2.1M19.3 12h2.1M4.3 19.7l1.5-1.5M18.2 5.8l1.5-1.5' />
+        </svg>
+      </button>
+      <a class='btn btn-sm btn-primary nav-cta' href='contact.html'>Contact</a>
+      <button id='navToggle' class='icon-btn nav-burger' type='button' aria-expanded='false' aria-controls='navLinks' aria-label='Open menu'>
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id='main'>
+
+  <!-- ======================= Hero ======================= -->
+  <section id='top' class='hero' style='min-height:auto'>
+    <canvas id='heroCanvas' class='hero-canvas' aria-hidden='true'></canvas>
+    <div class='hero-veil' aria-hidden='true'></div>
+
+    <div class='container hero-inner'>
+      <p class='eyebrow'>About me</p>
+      <h1 class='hero-title' style='font-size:var(--step-5)'>Two tracks, one way of working</h1>
+      <p class='hero-lede'>
+        Music taught me to build a group that rehearses, performs and gets paid.
+        Engineering taught me to build the tools that make it possible.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================= Who I am ======================= -->
+  <section class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>Who I am <span class='slash'>/</span> background</p>
+        <h2 class='section-title'>Strings and servers</h2>
+        <p class='section-sub'>Two halves, and the habits that connect them.</p>
+      </div>
+
+      <div class='about-grid'>
+        <div class='about-body reveal'>
+          <p class='lede'>I arrange, compose and conduct for strings — and I build the systems behind the work.</p>
+          <p>
+            I founded a string ensemble of six people that performs weddings and private events,
+            generating over $10,000 in revenue each year. I founded a school AI club that grew past
+            40 members, running hands-on sessions on applied machine learning. Underneath both sits
+            a personal AI and cloud storage data server that I designed, built and maintain myself.
+          </p>
+          <p>
+            Conducting taught me that a group is a system: everyone knows their part, and someone
+            has to keep the time. Building the server taught me the same thing about an idea.
+          </p>
+        </div>
+
+        <!-- EDIT: quick facts — swap the values freely. -->
+        <div class='panel reveal'>
+          <div class='panel-head'>
+            <p>At a glance</p>
+            <h3>What I bring</h3>
+          </div>
+          <dl class='spec-list'>
+            <div><dt>Discipline</dt><dd>Strings</dd></div>
+            <div><dt>Roles</dt><dd>Arrange · Compose · Conduct</dd></div>
+            <div><dt>Ensemble</dt><dd>6 members</dd></div>
+            <div><dt>Revenue</dt><dd>$10,000+ / yr</dd></div>
+            <div><dt>Community</dt><dd>AI club, 40+ members</dd></div>
+            <div><dt>Builds</dt><dd>Personal AI + storage server</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= What I built =======================
+       EDIT: each .work-card is one project. Duplicate a card to add
+       another, or delete cards you do not need.
+       ============================================================ -->
+  <section id='work' class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>What I built <span class='slash'>/</span> projects</p>
+        <h2 class='section-title'>Three things I built and still run</h2>
+        <p class='section-sub'>Two ensembles of people and one machine.</p>
+      </div>
+
+      <div class='work-grid'>
+        <!-- 01 -->
+        <article class='work-card reveal'>
+          <p class='work-index'>01</p>
+          <h3>Six-Person String Ensemble</h3>
+          <p class='work-role'>Founder &amp; Director</p>
+          <p>
+            Founded a string ensemble of six players that performs weddings and private events,
+            generating more than $10,000 in revenue per year.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Members</span><span>6</span></li>
+            <li><span>Revenue</span><span>$10,000+ / yr</span></li>
+            <li><span>Focus</span><span>Weddings &amp; events</span></li>
+          </ul>
+        </article>
+
+        <!-- 02 -->
+        <article class='work-card reveal'>
+          <p class='work-index'>02</p>
+          <h3>School AI Club</h3>
+          <p class='work-role'>Founder</p>
+          <p>
+            Founded the school AI club and grew it to more than 40 members, running weekly
+            hands-on sessions on applied machine learning.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Members</span><span>40+</span></li>
+            <li><span>Cadence</span><span>Weekly</span></li>
+            <li><span>Format</span><span>Hands-on workshops</span></li>
+          </ul>
+        </article>
+
+        <!-- 03 -->
+        <article class='work-card reveal'>
+          <p class='work-index'>03</p>
+          <h3>Personal AI + Cloud Storage Data Server</h3>
+          <p class='work-role'>Solo build</p>
+          <p>
+            Designed, built and maintain a personal AI server paired with cloud storage — the
+            backbone for the ensemble's bookings and the club's shared material.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Runtime</span><span>Always-on</span></li>
+            <li><span>Storage</span><span>Encrypted cloud</span></li>
+            <li><span>Access</span><span>Private</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Honors =======================
+       EDIT: each .honor is one recognition. Duplicate to add more.
+       ============================================================ -->
+  <section id='honors' class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>Recognition</p>
+        <h2 class='section-title'>Honors</h2>
+      </div>
+
+      <ul class='honors'>
+        <li class='honor reveal'>
+          <span class='honor-mark' aria-hidden='true'></span>
+          <div>
+            <h3>TMEA Region 23 — All-State Qualifier</h3>
+            <p>Advanced through the regional audition rounds to the TMEA Region 23 All-State ensemble.</p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- EDIT: skills — add or remove chips freely. -->
+      <div class='currently reveal'>
+        <h3>Currently</h3>
+        <ul class='chips'>
+          <li>Orchestration</li>
+          <li>Composition</li>
+          <li>Conducting</li>
+          <li>String ensemble</li>
+          <li>Club leadership</li>
+          <li>AI infrastructure</li>
+          <li>Cloud storage</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= Footer ======================= -->
+<footer class='site-footer'>
+  <div class='container footer-inner'>
+    <span>&copy; 2026 Liem Vora</span>
+    <span class='mono'>Orchestration · Composition · Conducting</span>
+    <a href='#top'>Back to top</a>
+  </div>
+</footer>
+
+<script src='assets/js/main.js'></script>
+</body>
+</html>

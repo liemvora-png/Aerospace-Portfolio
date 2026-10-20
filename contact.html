@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='en' data-theme='dark'>
+<head>
+<meta charset='utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>Contact — Liem Vora</title>
+<meta name='description' content='Book the string ensemble, arrange a piece, run an AI workshop, or get in touch about a project.' />
+
+<link rel='icon' href='favicon.svg' type='image/svg+xml' />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link href='https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap' rel='stylesheet' />
+<link rel='stylesheet' href='assets/css/styles.css' />
+
+<script>document.documentElement.className += ' js';</script>
+</head>
+
+<!--
+  ============================================================
+  CONTACT
+  ------------------------------------------------------------
+  EDITING MAP
+  1. Email address     → the mailto: links and the .contact-value
+  2. GitHub handle     → the .contact-card link
+  3. Enquiry checklist → .spec-list rows in the panel
+
+  Asset links are relative (assets/...).
+  ============================================================
+-->
+
+<body>
+
+<a class='skip-link' href='#main'>Skip to content</a>
+<div class='grain' aria-hidden='true'></div>
+<div class='scroll-progress' aria-hidden='true'><span id='progressBar'></span></div>
+
+<!-- ======================= Header ======================= -->
+<header id='siteHeader' class='site-header'>
+  <nav class='nav container' aria-label='Primary'>
+    <a class='brand' href='index.html'>
+      <svg class='brand-mark' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true' focusable='false'>
+        <path d='M9 17.5V4.5l10-1.8v12.4' />
+        <circle cx='6.4' cy='17.6' r='2.6' />
+        <circle cx='16.4' cy='15.4' r='2.6' />
+      </svg>
+      <span class='brand-text'>Liem Vora</span>
+    </a>
+
+    <ul id='navLinks' class='nav-links'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='about.html'>About</a></li>
+      <li><a href='services.html'>Services</a></li>
+      <li><a href='contact.html' class='is-active'>Contact</a></li>
+    </ul>
+
+    <div class='nav-actions'>
+      <button id='themeToggle' class='icon-btn' type='button' aria-pressed='false' aria-label='Switch to light theme'>
+        <svg class='icon icon-moon' viewBox='0 0 24 24' aria-hidden='true' focusable='false'><path d='M20 14.2A8.4 8.4 0 1 1 9.8 4 6.9 6.9 0 0 0 20 14.2Z' /></svg>
+        <svg class='icon icon-sun' viewBox='0 0 24 24' aria-hidden='true' focusable='false'>
+          <circle cx='12' cy='12' r='4.2' />
+          <path d='M12 2.6v2.1M12 19.3v2.1M4.3 4.3l1.5 1.5M18.2 18.2l1.5 1.5M2.6 12h2.1M19.3 12h2.1M4.3 19.7l1.5-1.5M18.2 5.8l1.5-1.5' />
+        </svg>
+      </button>
+      <a class='btn btn-sm btn-primary nav-cta' href='contact.html'>Contact</a>
+      <button id='navToggle' class='icon-btn nav-burger' type='button' aria-expanded='false' aria-controls='navLinks' aria-label='Open menu'>
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id='main'>
+
+  <!-- ======================= Hero ======================= -->
+  <section id='top' class='hero' style='min-height:auto'>
+    <canvas id='heroCanvas' class='hero-canvas' aria-hidden='true'></canvas>
+    <div class='hero-veil' aria-hidden='true'></div>
+
+    <div class='container hero-inner'>
+      <p class='eyebrow'>Contact</p>
+      <h1 class='hero-title' style='font-size:var(--step-5)'>Get in touch</h1>
+      <p class='hero-lede'>
+        Bookings, collaborations, or a question — all of it starts with an email.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================= Ways to reach me =======================
+       EDIT: swap the placeholder email and GitHub handle.
+       ============================================================ -->
+  <section class='section contact'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>Contact <span class='slash'>/</span> say hello</p>
+        <h2 class='section-title'>Bookings and collaborations</h2>
+        <p class='section-sub'>Weddings, arrangements, workshops or a server to build.</p>
+      </div>
+
+      <div class='contact-grid'>
+        <a class='contact-card reveal' href='mailto:you@example.com'>
+          <span class='contact-label'>Email</span>
+          <span class='contact-value'>you@example.com</span>
+        </a>
+        <a class='contact-card reveal' href='mailto:you@example.com?subject=Ensemble%20booking'>
+          <span class='contact-label'>Bookings</span>
+          <span class='contact-value'>Ensemble &amp; events</span>
+        </a>
+        <a class='contact-card reveal' href='https://github.com/liemvora-png'>
+          <span class='contact-label'>GitHub</span>
+          <span class='contact-value'>@liemvora-png</span>
+        </a>
+      </div>
+
+      <!-- EDIT: the enquiry checklist. -->
+      <div class='panel reveal' style='margin-top:clamp(1.5rem,4vw,2.5rem)'>
+        <div class='panel-head'>
+          <p>Helpful to include</p>
+          <h3>Before you write</h3>
+        </div>
+        <dl class='spec-list'>
+          <div><dt>Date &amp; venue</dt><dd>When and where</dd></div>
+          <div><dt>Lineup</dt><dd>Who, or how many</dd></div>
+          <div><dt>Repertoire</dt><dd>Anything to include</dd></div>
+          <div><dt>Budget</dt><dd>A range is fine</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= Footer ======================= -->
+<footer class='site-footer'>
+  <div class='container footer-inner'>
+    <span>&copy; 2026 Liem Vora</span>
+    <span class='mono'>Orchestration · Composition · Conducting</span>
+    <a href='#top'>Back to top</a>
+  </div>
+</footer>
+
+<script src='assets/js/main.js'></script>
+</body>
+</html>

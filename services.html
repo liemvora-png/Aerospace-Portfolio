@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang='en' data-theme='dark'>
+<head>
+<meta charset='utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>Services — Liem Vora</title>
+<meta name='description' content='Orchestration and arrangement, composition, conducting, string ensemble bookings for weddings and events, and AI workshops and infrastructure for schools and small teams.' />
+
+<link rel='icon' href='favicon.svg' type='image/svg+xml' />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link href='https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap' rel='stylesheet' />
+<link rel='stylesheet' href='assets/css/styles.css' />
+
+<script>document.documentElement.className += ' js';</script>
+</head>
+
+<!--
+  ============================================================
+  SERVICES
+  ------------------------------------------------------------
+  EDITING MAP
+  1. Service cards     → .work-card blocks under #services
+  2. Closing note      → the panel under the cards
+  3. Headline          → the hero title and lede
+
+  Asset links are relative (assets/...).
+  ============================================================
+-->
+
+<body>
+
+<a class='skip-link' href='#main'>Skip to content</a>
+<div class='grain' aria-hidden='true'></div>
+<div class='scroll-progress' aria-hidden='true'><span id='progressBar'></span></div>
+
+<!-- ======================= Header ======================= -->
+<header id='siteHeader' class='site-header'>
+  <nav class='nav container' aria-label='Primary'>
+    <a class='brand' href='index.html'>
+      <svg class='brand-mark' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true' focusable='false'>
+        <path d='M9 17.5V4.5l10-1.8v12.4' />
+        <circle cx='6.4' cy='17.6' r='2.6' />
+        <circle cx='16.4' cy='15.4' r='2.6' />
+      </svg>
+      <span class='brand-text'>Liem Vora</span>
+    </a>
+
+    <ul id='navLinks' class='nav-links'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='about.html'>About</a></li>
+      <li><a href='services.html' class='is-active'>Services</a></li>
+      <li><a href='contact.html'>Contact</a></li>
+    </ul>
+
+    <div class='nav-actions'>
+      <button id='themeToggle' class='icon-btn' type='button' aria-pressed='false' aria-label='Switch to light theme'>
+        <svg class='icon icon-moon' viewBox='0 0 24 24' aria-hidden='true' focusable='false'><path d='M20 14.2A8.4 8.4 0 1 1 9.8 4 6.9 6.9 0 0 0 20 14.2Z' /></svg>
+        <svg class='icon icon-sun' viewBox='0 0 24 24' aria-hidden='true' focusable='false'>
+          <circle cx='12' cy='12' r='4.2' />
+          <path d='M12 2.6v2.1M12 19.3v2.1M4.3 4.3l1.5 1.5M18.2 18.2l1.5 1.5M2.6 12h2.1M19.3 12h2.1M4.3 19.7l1.5-1.5M18.2 5.8l1.5-1.5' />
+        </svg>
+      </button>
+      <a class='btn btn-sm btn-primary nav-cta' href='contact.html'>Contact</a>
+      <button id='navToggle' class='icon-btn nav-burger' type='button' aria-expanded='false' aria-controls='navLinks' aria-label='Open menu'>
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id='main'>
+
+  <!-- ======================= Hero ======================= -->
+  <section id='top' class='hero' style='min-height:auto'>
+    <canvas id='heroCanvas' class='hero-canvas' aria-hidden='true'></canvas>
+    <div class='hero-veil' aria-hidden='true'></div>
+
+    <div class='container hero-inner'>
+      <p class='eyebrow'>Services</p>
+      <h1 class='hero-title' style='font-size:var(--step-5)'>What I offer</h1>
+      <p class='hero-lede'>
+        Music for ensembles and schools — and the AI work that supports them.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================= Services =======================
+       EDIT: each .work-card is one service. Duplicate a card to add
+       another, or delete cards you do not offer.
+       ============================================================ -->
+  <section id='services' class='section'>
+    <div class='container'>
+      <div class='section-head reveal'>
+        <p class='eyebrow'>What I do <span class='slash'>/</span> services</p>
+        <h2 class='section-title'>Five ways to work together</h2>
+        <p class='section-sub'>Music on one side, machines on the other.</p>
+      </div>
+
+      <div class='work-grid'>
+        <!-- 01 -->
+        <article class='work-card reveal'>
+          <p class='work-index'>01</p>
+          <h3>Orchestration &amp; Arrangement</h3>
+          <p class='work-role'>For ensembles and schools</p>
+          <p>
+            Parts, charts and rehearsal-ready PDFs written for strings — tuned to the players
+            actually available, not an idealised section.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Format</span><span>Charted parts &amp; PDF</span></li>
+            <li><span>Focus</span><span>Strings</span></li>
+          </ul>
+        </article>
+
+        <!-- 02 -->
+        <article class='work-card reveal'>
+          <p class='work-index'>02</p>
+          <h3>Composition</h3>
+          <p class='work-role'>Original writing</p>
+          <p>
+            Original pieces and re-arrangements for string ensembles and school programs, written
+            to the players in the room.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Deliverable</span><span>Score + parts</span></li>
+            <li><span>Use</span><span>Programs &amp; gigs</span></li>
+          </ul>
+        </article>
+
+        <!-- 03 -->
+        <article class='work-card reveal">
+          <p class='work-index'>03</p>
+          <h3>Conducting</h3>
+          <p class='work-role'>Ensemble direction</p>
+          <p>
+            Directing string ensembles and school groups — rehearsals that build a piece instead
+            of just running through it.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Scope</span><span>Strings &amp; school groups</span></li>
+            <li><span>Format</span><span>Rehearsal + performance</span></li>
+          </ul>
+        </article>
+
+        <!-- 04 -->
+        <article class='work-card reveal'>
+          <p class='work-index'>04</p>
+          <h3>String Ensemble for Events</h3>
+          <p class='work-role'>Six players, booked and run</p>
+          <p>
+            A six-piece string ensemble for weddings and private events — charted, rehearsed and
+            conducted on the day.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Members</span><span>6</span></li>
+            <li><span>Revenue</span><span>$10,000+ / yr</span></li>
+          </ul>
+        </article>
+
+        <!-- 05 -->
+        <article class='work-card reveal">
+          <p class='work-index'>05</p>
+          <h3>AI Workshops &amp; Systems</h3>
+          <p class='work-role'>For schools and small teams</p>
+          <p>
+            Hands-on AI sessions built for school clubs, plus personal AI and cloud storage
+            servers designed, built and maintained from scratch.
+          </p>
+          <ul class='work-facts'>
+            <li><span>Track record</span><span>40+ club members</span></li>
+            <li><span>Builds</span><span>Personal AI + storage</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- EDIT: the closing note and its button. -->
+      <div class='panel reveal' style='margin-top:clamp(1.5rem,4vw,2.5rem)'>
+        <div class='panel-head'>
+          <p>Next step</p>
+          <h3>Tell me what you need</h3>
+        </div>
+        <p>
+          Weddings, arrangements, workshops or a server to build — send the date, the lineup and
+          the budget, and I'll reply with availability.
+        </p>
+        <p style='margin-top:1.5rem'>
+          <a class='btn btn-primary' href='contact.html'>Get in touch</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= Footer ======================= -->
+<footer class='site-footer'>
+  <div class='container footer-inner'>
+    <span>&copy; 2026 Liem Vora</span>
+    <span class='mono'>Orchestration · Composition · Conducting</span>
+    <a href='#top'>Back to top</a>
+  </div>
+</footer>
+
+<script src='assets/js/main.js'></script>
+</body>
+</html>

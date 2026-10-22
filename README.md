@@ -1,10 +1,10 @@
-# SKYWARD
+# deltav
 
-Concept aircraft mission-study portfolio for **SKYWARD**, an illustrative two-seat homebuilt-aircraft study. The site records a proposed mission, component choices, feasibility gaps, and a plan for qualified design review.
+Concept aircraft mission-study portfolio for **deltav**, an illustrative two-seat homebuilt-aircraft study. The site records a proposed mission, component choices, feasibility gaps, and a plan for qualified design review.
 
 ## Concept disclaimer
 
-SKYWARD is a fictional, early-stage design concept—not a real, built, flight-tested, or certified aircraft. The mission figures are user-provided goals, not measured or validated data. No information on this site is suitable for construction, engineering, safety, or operational decisions. Feasibility is not established, and qualified aircraft-design and regulatory review is required.
+deltav is a fictional, early-stage design concept—not a real, built, flight-tested, or certified aircraft. The mission figures are user-provided goals, not measured or validated data. No information on this site is suitable for construction, engineering, safety, or operational decisions. Feasibility is not established, and qualified aircraft-design and regulatory review is required.
 
 ## Information architecture
 
@@ -25,7 +25,7 @@ The site is plain HTML, CSS, inline SVG, and dependency-free JavaScript. There i
 | `index.html` | Single-page aircraft design portfolio and section navigation |
 | `assets/css/styles.css` | Design tokens, responsive layout, and components |
 | `assets/js/main.js` | Responsive navigation, scroll state, and accessible reveal behavior |
-| `favicon.svg` | SKYWARD aircraft mark |
+| `favicon.svg` | deltav aircraft mark |
 | `about.html`, `services.html`, `contact.html` | Legacy routes redirected to relevant portfolio sections |
 | `404.html` | GitHub Pages not-found page |
 | `.nojekyll` | Publishes the repository as-is |

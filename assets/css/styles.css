@@ -1,5 +1,5 @@
 /* ==========================================================
-   SKYWARD — concept aircraft design portfolio
+   deltav — concept aircraft design portfolio
    tokens → base → layout → components → utilities
    ========================================================== */
 
@@ -611,13 +611,12 @@ p:last-child { margin-bottom: 0; }
   .hero { min-height: auto; padding-top: 2rem; }
 }
 
-/* ---------- SKYWARD aircraft portfolio ---------- */
+/* ---------- deltav aircraft portfolio ---------- */
 html { scroll-padding-top: calc(var(--header-h) + 24px); }
 body { font-weight: 400; }
 .brand { gap: 0.5rem; }
 .brand-mark { color: var(--accent); width: 29px; height: 29px; }
 .brand-text { font-family: var(--font-display); font-size: 0.92rem; font-weight: 800; letter-spacing: 0.12em; }
-.brand-dot { color: var(--accent); }
 .nav { gap: 1rem; }
 .nav-links { gap: clamp(0.65rem, 1.2vw, 1.2rem); }
 .nav-links a { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; }

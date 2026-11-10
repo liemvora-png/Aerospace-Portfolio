@@ -648,7 +648,11 @@ body { font-weight: 400; }
 .hero-status { display: flex; flex-direction: column; gap: .35rem; padding-left: .9rem; border-left: 1px solid var(--line-strong); margin-top: 2.7rem; color: var(--text-dim); font-size: .77rem; }
 .mono { font-family: var(--font-mono); font-size: .66rem; letter-spacing: .1em; }
 .hero-status .mono { color: var(--text-faint); }
-.hero-art { position: relative; min-width: 0; min-height: 465px; display: grid; place-items: center; }
+.people-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; width: 100%; margin-top: 1rem; }
+.person-card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.5rem; }
+.person-card h3 { margin: 0 0 .25rem; font-size: 1.05rem; }
+.person-role { color: var(--accent); font-size: .75rem; letter-spacing: .08em; margin: 0 0 .75rem; text-transform: uppercase; }
+.person-bio { margin: 0; color: var(--text-dim); font-size: .9rem; line-height: 1.6; }
 .art-grid { position: absolute; inset: 5% -10% 4% 0; opacity: .25; background-image: linear-gradient(rgba(166, 195, 174, .2) 1px, transparent 1px), linear-gradient(90deg, rgba(166, 195, 174, .2) 1px, transparent 1px); background-size: 32px 32px; mask-image: radial-gradient(ellipse, #000 25%, transparent 76%); }
 .aircraft-illustration { width: min(115%, 820px); overflow: visible; position: relative; z-index: 1; filter: drop-shadow(0 25px 26px rgba(0,0,0,.26)); }
 .art-tag, .art-caption { position: absolute; z-index: 2; color: var(--text-faint); font-size: .57rem; letter-spacing: .12em; }

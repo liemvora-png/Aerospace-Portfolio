@@ -256,18 +256,18 @@ img, svg { display: block; }
 
 .nav-burger span {
   display: block;
-  width: 15px;
+  width: 13px;
   height: 1.5px;
   border-radius: 1px;
   background: currentColor;
   transition: transform .25s var(--ease);
 }
 
-.nav-burger span + span { margin-top: 4px; }
+.nav-burger span + span { margin-top: 2.5px; }
 
-.nav-burger[aria-expanded='true'] span:first-child { transform: translateY(5.5px) rotate(45deg); }
+.nav-burger[aria-expanded='true'] span:first-child { transform: translateY(4px) rotate(45deg); }
 .nav-burger[aria-expanded='true'] span:nth-child(2) { transform: scaleX(0); opacity: 0; }
-.nav-burger[aria-expanded='true'] span:last-child { transform: translateY(-5.5px) rotate(-45deg); }
+.nav-burger[aria-expanded='true'] span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
 /* Buttons -------------------------------------------------- */
 
@@ -289,6 +289,8 @@ img, svg { display: block; }
 .btn:hover { border-color: var(--accent); color: var(--accent); }
 
 .btn-sm { padding: .55rem 1rem; font-size: .64rem; }
+
+.nav-cta { padding: .42rem .8rem; font-size: .6rem; }
 
 .btn-primary {
   background: var(--accent);
@@ -911,7 +913,7 @@ img, svg { display: block; }
 
 @media (max-width: 720px) {
   .nav-cta { display: none; }
-  .nav-burger { display: inline-grid; }
+  .nav-burger { display: inline-grid; align-content: center; }
 
   .nav-links {
     position: fixed;
@@ -922,11 +924,17 @@ img, svg { display: block; }
     padding: 1.6rem var(--gutter) 2rem;
     background: var(--bg);
     border-bottom: 1px solid var(--line);
-    transform: translateY(-110%);
-    transition: transform .3s var(--ease);
+    /* -200% guarantees the fully retracted panel clears the top edge at any height */
+    transform: translateY(-200%);
+    visibility: hidden;
+    transition: transform .3s var(--ease), visibility 0s linear .3s;
   }
 
-  .nav-links.is-open { transform: translateY(0); }
+  .nav-links.is-open {
+    transform: translateY(0);
+    visibility: visible;
+    transition: transform .3s var(--ease), visibility 0s;
+  }
   .nav-links a { font-size: .8rem; }
 
   .air-hero h1 { font-size: clamp(3.2rem, 13vw, 4.6rem); }

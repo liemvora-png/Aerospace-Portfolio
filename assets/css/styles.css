@@ -290,6 +290,8 @@ img, svg { display: block; }
 
 .btn-sm { padding: .55rem 1rem; font-size: .64rem; }
 
+.nav-cta { padding: .42rem .8rem; font-size: .6rem; }
+
 .btn-primary {
   background: var(--accent);
   border-color: var(--accent);

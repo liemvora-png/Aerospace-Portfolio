@@ -922,11 +922,17 @@ img, svg { display: block; }
     padding: 1.6rem var(--gutter) 2rem;
     background: var(--bg);
     border-bottom: 1px solid var(--line);
-    transform: translateY(-110%);
-    transition: transform .3s var(--ease);
+    /* -200% guarantees the fully retracted panel clears the top edge at any height */
+    transform: translateY(-200%);
+    visibility: hidden;
+    transition: transform .3s var(--ease), visibility 0s linear .3s;
   }
 
-  .nav-links.is-open { transform: translateY(0); }
+  .nav-links.is-open {
+    transform: translateY(0);
+    visibility: visible;
+    transition: transform .3s var(--ease), visibility 0s;
+  }
   .nav-links a { font-size: .8rem; }
 
   .air-hero h1 { font-size: clamp(3.2rem, 13vw, 4.6rem); }

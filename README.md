@@ -4,27 +4,27 @@ Concept aircraft mission-study portfolio for **deltav**, an illustrative two-sea
 
 ## Concept disclaimer
 
-deltav is a fictional, early-stage design concept—not a real, built, flight-tested, or certified aircraft. The mission figures are user-provided goals, not measured or validated data. No information on this site is suitable for construction, engineering, safety, or operational decisions. Feasibility is not established, and qualified aircraft-design and regulatory review is required.
+deltav is a fictional, early-stage design concept, not a real, built, flight-tested, or certified aircraft. The mission figures are user-provided goals, not measured or validated data. No information on this site is suitable for construction, engineering, safety, or operational decisions. Feasibility is not established, and qualified aircraft-design and regulatory review is required.
 
 ## Information architecture
 
-- **Home** — concept overview and original aircraft illustration
-- **Concept** — proposed two-person mission and design status
-- **Aircraft** — proposed specifications, cabin layout, aerodynamics, propulsion, and structure
-- **Performance** — endurance, cruise, takeoff-distance goals, and feasibility gaps
-- **Simulation** — planned aerodynamics, energy, and structural analysis
-- **Development** — phased design roadmap
-- **Documentation** — concept brief, analysis plan, and design limitations
+- **Home**: mission-study summary and key design questions
+- **Concept**: proposed two-person mission and design status
+- **Aircraft**: proposed specifications, cabin layout, aerodynamics, propulsion, and structure
+- **Performance**: endurance, cruise, takeoff-distance goals, and feasibility gaps
+- **Simulation**: planned aerodynamics, energy, and structural analysis
+- **Development**: phased design roadmap
+- **Documentation**: concept brief, team credit, analysis plan, and design limitations
 
 ## Stack
 
-The site is plain HTML, CSS, inline SVG, and dependency-free JavaScript. There is no package manager, build step, or installation required.
+The site is plain HTML, CSS, inline SVG, and dependency-free JavaScript, with a dark/light theme toggle. Fonts come from Google Fonts (Manrope, DM Sans, DM Mono). There is no package manager, build step, or installation required.
 
 | Path | Purpose |
 | --- | --- |
 | `index.html` | Single-page aircraft design portfolio and section navigation |
 | `assets/css/styles.css` | Design tokens, responsive layout, and components |
-| `assets/js/main.js` | Responsive navigation, scroll state, and accessible reveal behavior |
+| `assets/js/main.js` | Theme toggle (dark/light, saved to localStorage), responsive navigation, scroll state, and accessible reveal behavior |
 | `favicon.svg` | deltav aircraft mark |
 | `about.html`, `services.html`, `contact.html` | Legacy routes redirected to relevant portfolio sections |
 | `404.html` | GitHub Pages not-found page |

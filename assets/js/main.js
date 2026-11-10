@@ -10,6 +10,29 @@
     return Array.prototype.slice.call((context || document).querySelectorAll(selector));
   }
 
+  var themeToggle = $('#themeToggle');
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (themeMeta) themeMeta.setAttribute('content', theme === 'light' ? '#f7f2e6' : '#141210');
+    if (themeToggle) themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    try { window.localStorage.setItem('deltav-theme', theme); } catch (err) { /* storage unavailable */ }
+  }
+
+  var savedTheme = null;
+  try { savedTheme = window.localStorage.getItem('deltav-theme'); } catch (err) { /* storage unavailable */ }
+  var initialTheme = (savedTheme === 'light' || savedTheme === 'dark')
+    ? savedTheme
+    : (document.documentElement.getAttribute('data-theme') || 'light');
+  applyTheme(initialTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      applyTheme(document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+    });
+  }
+
   var navToggle = $('#navToggle');
   var navLinks = $('#navLinks');
 
